@@ -1,0 +1,35 @@
+{
+  "name": "cnblogs-theme-black",
+  "version": "1.0.0",
+  "description": "博客园黑色皮肤",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamliujingjiu/cnblogs-theme-black.git"
+  },
+  "keywords": [
+    "cnblogs"
+  ],
+  "author": "Fatman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamliujingjiu/cnblogs-theme-black/issues"
+  },
+  "homepage": "https://github.com/iamliujingjiu/cnblogs-theme-black#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.0"
+  }
+}
