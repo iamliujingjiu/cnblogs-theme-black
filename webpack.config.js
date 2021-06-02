@@ -6,12 +6,13 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        filename: 'index.js',
-        path: path.resolve(__dirname, 'dist')
+        filename: 'index.js'
+        // filename: 'index.js',
+        // path: path.resolve(__dirname, 'dist')
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        compress: true,//压缩
+        compress: false,
         progress: true,
         open: true,
         hot: true,
@@ -38,7 +39,6 @@ module.exports = {
     },
     
     plugins: [
-        new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
             template: './src/default.htm',
             filename: 'default.htm',
