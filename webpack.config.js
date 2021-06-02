@@ -9,6 +9,14 @@ module.exports = {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist')
     },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,//压缩
+        progress: true,
+        open: true,
+        hot: true,
+        port: 9000,
+    },
     module: {
         rules: [
             {
@@ -31,11 +39,6 @@ module.exports = {
     
     plugins: [
         new webpack.ProgressPlugin(),
-        new HtmlWebpackPlugin({
-            template: './src/default.htm',
-            filename: 'default.htm',
-            hash: true    
-        }),
         new HtmlWebpackPlugin({
             template: './src/default.htm',
             filename: 'default.htm',

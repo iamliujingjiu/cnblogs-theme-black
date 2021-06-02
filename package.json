@@ -5,7 +5,8 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,16 +21,16 @@
     "url": "https://github.com/iamliujingjiu/cnblogs-theme-black/issues"
   },
   "homepage": "https://github.com/iamliujingjiu/cnblogs-theme-black#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
-    "webpack": "^5.38.1"
-  },
-  "devDependencies": {
-    "webpack-cli": "^4.7.0"
+    "webpack": "^5.38.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
   }
 }
